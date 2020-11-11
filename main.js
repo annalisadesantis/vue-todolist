@@ -16,8 +16,8 @@ var app = new Vue({
             this.listatodo.push(this.nuovoitem);
             this.nuovoitem = "";
         },
-        removeitem(){
-
+        removeitem(index){
+            this.listatodo.splice(index, 1);
         }
     }
 });

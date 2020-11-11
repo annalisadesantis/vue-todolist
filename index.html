@@ -26,7 +26,7 @@
                     {{ bottone }}
                 </button>
                 <ul>
-                    <li v-for="(item, indice) in listatodo" :key="listatodo[indice]">
+                    <li @click="removeitem(indice)" v-for="(item, indice) in listatodo" :key="listatodo[indice]">
                         <i class="fas fa-check">
                             {{ listatodo[indice] }}
                         </i>
