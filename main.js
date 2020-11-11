@@ -8,6 +8,12 @@ var app = new Vue({
     data: {
         titolo: "Todo list 11/11/2020",
         listatodo: ["andare in farmacia", "comprare il caffè", "ripetere vue", "pagare la bolletta", "innaffiare le piante"],
-        bottone: "Aggiungi"
+        bottone: "Aggiungi",
+        nuovoitem: ""
     },
+    methods: {
+        additem(){
+
+        }
+    }
 });
