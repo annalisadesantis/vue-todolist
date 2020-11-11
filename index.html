@@ -21,12 +21,12 @@
                 <h1>
                     {{ titolo }}
                 </h1>
-                <input v-model="nuovoitem" type="text" placeholder="Scrivi qui">
+                <input v-model="nuovoitem" v-on:keyup.13="additem"  type="text" placeholder="Scrivi qui">
                 <button @click="additem" type="button" name="button">
                     {{ bottone }}
                 </button>
                 <ul>
-                    <li @click="removeitem(indice)" v-for="(item, indice) in listatodo" :key="listatodo[indice]">
+                    <li @click="removeitem(indice)" v-for="(item, indice) in listatodo">
                         <i class="fas fa-check">
                             {{ listatodo[indice] }}
                         </i>
