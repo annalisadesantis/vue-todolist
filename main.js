@@ -13,8 +13,12 @@ var app = new Vue({
     },
     methods: {
         additem(){
-            this.listatodo.push(this.nuovoitem);
-            this.nuovoitem = "";
+            if(this.nuovoitem != ""){
+                this.listatodo.push(this.nuovoitem);
+                this.nuovoitem = "";
+            }else{
+                alert("Inserisci qualcosa da fare!")
+            }
         },
         removeitem(index){
             this.listatodo.splice(index, 1);
