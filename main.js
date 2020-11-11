@@ -7,6 +7,7 @@ var app = new Vue({
     el: "#root",
     data: {
         titolo: "Todo list 11/11/2020",
-        listatodo: ["andare in farmacia", "comprare il caffè", "ripetere vue", "pagare la bolletta", "innaffiare le piante"]
+        listatodo: ["andare in farmacia", "comprare il caffè", "ripetere vue", "pagare la bolletta", "innaffiare le piante"],
+        bottone: "Aggiungi"
     },
 });
