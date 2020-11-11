@@ -14,6 +14,10 @@ var app = new Vue({
     methods: {
         additem(){
             this.listatodo.push(this.nuovoitem);
+            this.nuovoitem = "";
+        },
+        removeitem(){
+
         }
     }
 });
