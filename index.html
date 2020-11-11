@@ -22,10 +22,9 @@
                     {{ titolo }}
                 </h1>
                 <input v-model="nuovoitem" type="text" placeholder="Scrivi qui">
-                <button type="button" name="button">
+                <button @click="additem" type="button" name="button">
                     {{ bottone }}
                 </button>
-                <p> {{ nuovoitem }} </p>
                 <ul>
                     <li v-for="(item, indice) in listatodo" :key="listatodo[indice]">
                         <i class="fas fa-check">
