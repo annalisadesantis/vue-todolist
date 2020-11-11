@@ -17,7 +17,18 @@
     <body>
 
         <div id="root">
-
+            <div class="container">
+                <h1>
+                    {{ titolo }}
+                </h1>
+                <ul>
+                    <li v-for="(item, indice) in listatodo" :key="listatodo[indice]">
+                        <i class="fas fa-check">
+                            {{ listatodo[indice] }}
+                        </i>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- JAVASCRIPT -->
         <script src="main.js" charset="utf-8"></script>
