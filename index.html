@@ -22,7 +22,7 @@
                     {{ titolo }}
                 </h1>
                 <div class="utente">
-                    <input v-model="nuovoitem" v-on:keyup.13="additem"  type="text" placeholder="Scrivi qui">
+                    <input v-model="nuovoitem" @keyup.enter="additem"  type="text" placeholder="Scrivi qui">
                     <button @click="additem" type="button" name="button">
                         {{ bottone }}
                     </button>
